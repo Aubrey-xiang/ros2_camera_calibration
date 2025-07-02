@@ -5,7 +5,7 @@ ros2的相机标定工具
 
 标定板生成网站：https://calib.io/pages/camera-calibration-pattern-generator
 
-1.安装工具
+**1.安装工具**
 ```
   sudo apt install ros-humble-camera-calibration-parsers
 ```
@@ -15,15 +15,39 @@ ros2的相机标定工具
 ```
   sudo apt install ros-humble-launch-testing-ament-cmake
 ```
-2.clone该仓库，解压压缩包
+**2.clone该仓库，解压压缩包**
 
-3.打开camera/src/image_pipeline
+**3.打开camera/src,在该目录下打开终端运行以下命令编译**
 
-4.在该目录下打开终端colcon build
+```
+colcon build --symlink-install --parallel-workers 4
+```
 
-5.运行相机节点
+4.选择不同的相机运行不同的节点,运行节点前别忘了source
 
-6.运行标定工具
+```
+source install/setup.bash 
+```
+
+
+(1)海康相机
+
+```
+ros2 run hik_camera hik_camera_node 
+```
+
+
+(2)迈德威视
+
+```
+ros2 run mindvision_camera mindvision_camera_node 
+```
+
+5.运行标定工具
+
+```
+source install/setup.bash 
+
 ```
   ros2 run camera_calibration cameracalibrator --size 10x7 --square 0.015 image:=/image_raw  camera:=/camera --no-service-check
 ```
