@@ -50,7 +50,9 @@ ros2 run mindvision_camera mindvision_camera_node
 **5.运行标定工具**
 
 ```
-source install/setup.bash 
+source install/setup.bash
+```
+
 
 ```
   ros2 run camera_calibration cameracalibrator --size 10x7 --square 0.015 image:=/image_raw  camera:=/camera --no-service-check
