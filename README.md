@@ -55,7 +55,7 @@ source install/setup.bash
 
 
 ```
-  ros2 run camera_calibration cameracalibrator --size 10x7 --square 0.015 image:=/image_raw  camera:=/camera --no-service-check
+ros2 run camera_calibration cameracalibrator --size 10x7 --square 0.015 image:=/image_raw  camera:=/camera --no-service-check
 ```
 
   参数：
