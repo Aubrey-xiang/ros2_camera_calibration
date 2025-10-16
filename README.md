@@ -29,7 +29,7 @@ ros2的相机标定工具
   source install/setup.bash
 ```
 ```
-  ros2 run hik_camera hik_camera.launch.py
+  ros2 run hik_camera hik_camera_node
 ```
   - 运行mindvison相机节点
 ```
