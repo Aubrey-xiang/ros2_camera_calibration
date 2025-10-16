@@ -46,7 +46,7 @@ ros2的相机标定工具
   ros2 run galaxy_camera galaxy_camera_node
 ```
   
-6.运行标定工具
+6.新建终端运行标定工具
 ```
   source install/setup.bash
 ```
