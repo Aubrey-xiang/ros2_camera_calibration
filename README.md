@@ -36,7 +36,7 @@ ros2的相机标定工具
   source install/setup.bash
 ```
 ```
-  ros2 run ros2_dahua ros2_dahua 
+  ros2 run mindvision_camera mindvision_camera_node 
 ```
   - 运行galaxy相机节点
 ```
